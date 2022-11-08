@@ -415,7 +415,7 @@ body {
 .news-inner .news-wrap:last-child {
   float: right;
 }
-.news-wrap h3{
+.news-wrap h3 {
   position: relative;
   display: block;
   font-size: 32px;
@@ -470,6 +470,36 @@ body {
   background-color: #f8f8f8;
 }
 .cs-inner {
+  position: relative;
+  display: block;
+}
+.cs-link {
+  position: relative;
+  display: block;
+  height: 200px;
+  width: calc(50% - 1px);
+  background: #fff;
+  padding: 50px 60px;
+}
+.cs-inner > .cs-link:first-child {
+  float: left;
+  background: #fff url(../images/bg_faq.png) no-repeat;
+  background-position: calc(100% - 50px) 50%;
+}
+.cs-inner > .cs-link:last-child {
+  float: right;
+  background: #fff url(../images/bg_custom.png) no-repeat;
+  background-position: calc(100% - 50px) 50%;
+}
+.cs-link h3 {
+  position: relative;
+  display: block;
+  color: #000;
+  font-size: 30px;
+  font-size: 500;
+  margin-bottom: 20px;
+}
+.cs-link p {
   position: relative;
   display: block;
 }
