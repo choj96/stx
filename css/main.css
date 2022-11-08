@@ -355,10 +355,17 @@ body {
   left: calc(50% - 130px / 2);
   bottom: 94px;
   display: block;
+  visibility: hidden;
+  opacity: 0;
   width: 130px;
   height: 112px;
   background: url(../images/bg_common.png) no-repeat;
   background-position: 0px 0px;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.business-list > li > a:hover::after {
+  visibility: visible;
+  opacity: 1;
 }
 .business-list > li:nth-child(1) > a::after {
   background-position: -165px 0px;
@@ -375,8 +382,6 @@ body {
 .business-list > li:nth-child(5) > a::after {
   background-position: -267px -114px;
 }
-
-
 /* 뉴스 */
 .news {
   position: relative;
